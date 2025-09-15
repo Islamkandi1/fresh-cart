@@ -1,4 +1,3 @@
-"use server"
 import axios from "axios";
 import { orderFormType } from '@/schema/order.schema';
 import { getToken } from "@/utilities/getToken/GetToken";
