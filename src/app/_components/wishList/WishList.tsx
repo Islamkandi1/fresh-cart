@@ -60,7 +60,7 @@ const WishList = ({ prop, productId }: { prop: string, productId: string }) => {
 
 
   // handle icons===================================================================
-  const heartData = data?.data.map(product => product._id)
+  const heartData = data?.data?.map(product => product._id)
   let icon;
   const isInWishlist =
      heartData?.includes(productId);
