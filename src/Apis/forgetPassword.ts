@@ -1,5 +1,3 @@
-"use server"
-
 import { forgetPasswordFormType } from "@/schema/forgetPasword.schema";
 
 export async function forgetPasswordAction(values: forgetPasswordFormType) {         

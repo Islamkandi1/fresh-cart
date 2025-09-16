@@ -37,7 +37,6 @@ const UpdateUser = () => {
   })
   // update user ========================================================
   async function updateUser(values: updateUserFormType) {
-    console.log(values)
     setIsLoading(true)
     const token = await getToken();
     try {

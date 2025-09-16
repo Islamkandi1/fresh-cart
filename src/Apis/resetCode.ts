@@ -1,4 +1,3 @@
-"use server"
 import { resetCodeFormType } from "@/schema/resetCode.schema";
 
 export async function SendCodeAction(values: resetCodeFormType) {

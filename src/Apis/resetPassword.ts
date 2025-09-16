@@ -1,4 +1,3 @@
-"use server"
 import { resetPasswordFormType } from "@/schema/resetPassowrd.schema";
 
 export     async function resetPasswordAction(values: resetPasswordFormType) {
