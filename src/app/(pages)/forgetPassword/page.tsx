@@ -19,6 +19,7 @@ import { ScaleLoader } from "react-spinners";
 import { forgetPasswordFormType, forgetPasswordSchema } from "@/schema/forgetPasword.schema";
 import { useRouter } from "next/navigation";
 import { forgetPasswordAction } from "@/Apis/forgetPassword"
+import { ForgetError } from "@/types/forgetError"
 
 
 export default function ResetPassword() {
@@ -53,9 +54,12 @@ export default function ResetPassword() {
                         theme: "light",
                     });
                 route.push("/resetCode")
+            }else{
+                throw new Error(data.message)
             }
-        } catch {
-            toast.error("There is no user registered with this email address"
+        } catch(err) {
+           const error = err as ForgetError
+            toast.error(error.message ||"something went wrong"
                 , {
                     position: "top-right",
                     autoClose: 2000,

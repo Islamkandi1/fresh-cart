@@ -1,7 +1,6 @@
 import { forgetPasswordFormType } from "@/schema/forgetPasword.schema";
 
 export async function forgetPasswordAction(values: forgetPasswordFormType) {
-    console.log(JSON.stringify(values))
   const res = await fetch(
     "https://ecommerce.routemisr.com/api/v1/auth/forgotPasswords",
     {
