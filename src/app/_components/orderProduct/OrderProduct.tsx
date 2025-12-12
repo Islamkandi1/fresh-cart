@@ -5,7 +5,6 @@ const OrderProduct = ({ item }: { item: CartItem }) => {
     return (
         <>
             <section className="sectionide-y sectionide-gray-200">
-
                 <section className="p-3 sm:p-5 grid grid-cols-2 md:grid-cols-4 gap-6 items-center hover:bg-gray-50 transition">
                     <section className="flex items-center gap-4   min-w-[180px] flex-1">
                         <section className="w-14 h-15 sm:w-16 sm:h-[100px] rounded-lg overflow-hidden bg-gray-100 shadow-sm flex-shrink-0">

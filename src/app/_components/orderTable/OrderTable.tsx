@@ -10,7 +10,6 @@ const OrderTable = ({ product }: { product: Order }) => {
         day: "numeric",
     });
 
-    console.log(product?.cartItems)
     
     return (
         <>
